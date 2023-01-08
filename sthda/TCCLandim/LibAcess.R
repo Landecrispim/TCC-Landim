@@ -8,15 +8,14 @@ library(factoextra) # clustering algorithms & visualization
 
 
 #dados <- read.table("C:/Users/Lander/Desktop/", head = TRUE)
-dados <- read.table("H:/O meu disco/TCC_Lander/Bianca/polbooks.txt", head = TRUE)
+dados <- read.table("Data/polbooks.txt", head = TRUE)
 k=2
 s=0.2
 R=1
-
 #op <- par(mfrow = c(2, 2),las = 2)
 
 
-TCCLandim(dados,3,0.04,5)
+TCCLandim(dados,k,s,R)
 
 #mat = matrix(nrow =34,ncol = 100 )
 #a = TCCLandim(dados,k,4,R)
