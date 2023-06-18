@@ -180,7 +180,7 @@ TCCLandim <- function(dados,K,s,Plot) {
 
 
    plot(fviz_silhouette(silhouette(km$cluster,dist(auto_cluster))))
-    return(fviz_silhouette(silhouette(km$cluster,dist(auto_cluster))))
+   return(fviz_silhouette(silhouette(km$cluster,dist(auto_cluster))))
 
    # plot(silhouette(km$cluster,dist(auto_cluster)))
   }
@@ -212,9 +212,8 @@ TCCLandim <- function(dados,K,s,Plot) {
 
 
   }
+  if(R==7){
+    print(fviz_silhouette(silhouette(km$cluster,dist(auto_cluster))))
 
-
-
-  #return(km)
-
+  }
 }
